@@ -8,17 +8,19 @@ const count = document.querySelector('#count');
 var data=0;
 
 increment.addEventListener('click', ()=> {
-    count.innerHTML = data++;
+    data=data+1;
+    count.innerHTML = data;
 })
 
 reset.addEventListener('click', ()=> {
-    let counter = 0;
-    count.innerHTML = `${counter}`;
+    data=0;
+    count.innerHTML = data;
 })
 
 
 decrement.addEventListener('click', ()=> {
-    count.innerHTML = data--;
+    data=data-1;
+    count.innerHTML = data;
 })
 
 
